@@ -33,7 +33,7 @@ a {
 }
 
 .wave {
-  background: url('../public/assets/wave.svg') repeat-x;
+  background: url('/assets/wave.svg') repeat-x;
   position: absolute;
   top: -190px;
   width: 6400px;
