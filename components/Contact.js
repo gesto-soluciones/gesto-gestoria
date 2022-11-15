@@ -25,8 +25,8 @@ const Contact = () => {
 
     return ( 
         <>
-            <div className="relative ">
-                <div className="absolute z-10 -bottom-32 -right-32 h-[20rem] w-[20rem] lg:h-[30rem] lg:w-[30rem]">
+            <div className="relative">
+                <div className="absolute z-10-bottom-32 -right-32 h-[20rem] w-[20rem] lg:h-[30rem] lg:w-[30rem]">
                     <Image src="/assets/mail.svg" alt="" layout="fill"/>
                 </div>
                 <form onSubmit={ handleSubmit } className="relative z-30 flex flex-col gap-y-2 w-11/12 lg:w-[50rem] mx-auto">
