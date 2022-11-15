@@ -56,7 +56,7 @@ const Nav = () => {
                     transition={ { duration: 0.5 } }    
                     className="md:hidden fixed bg-main font-sans text-white/80 w-full h-screen top-0 right-0 mt-14 pl-10"
                 >
-                    <div className="flex flex-col gap-y-2 pt-4">
+                    <div className="flex flex-col gap-y-4 pt-12">
                         <a
                             href="#services" 
                             onClick={ () => setMenu(menu => !menu)} 
@@ -85,9 +85,9 @@ const Nav = () => {
                         >
                             Contacto
                         </a>
-                        <div className="flex gap-x-2">
-                            <a className="rounded-full p-1 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer"><RiFacebookFill size={15}/></a>
-                            <a className="rounded-full p-1 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer"><RiInstagramLine size={15}/></a>                               
+                        <div className="flex mt-2 gap-x-4">
+                            <a className="rounded-full p-2 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer"><RiFacebookFill size={20}/></a>
+                            <a className="rounded-full p-2 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer"><RiInstagramLine size={20}/></a>                               
                         </div>
                     </div>
                 </motion.div>
