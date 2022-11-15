@@ -177,7 +177,7 @@ export default function Home() {
                     dragConstraints={{ right:0, left:-width }}
                     drag="x"
                 >
-                    <motion.div className="flex flex-col gap-y-3 rounded-md shadow-lg p-8 h-full w-[25rem] min-w-[25rem] lg:w-[35rem] lg:min-w-[35rem] text-slate-800/90"> 
+                    <motion.div className="flex flex-col gap-y-3 rounded-md shadow-lg p-8 h-full w-[20rem] min-w-[20rem] md:w-[25rem] md:min-w-[25rem] lg:w-[35rem] lg:min-w-[35rem] text-slate-800/90"> 
                         <h2 className="font-heading font-semibold text-2xl ">David H.</h2>
                         <Stars filled={4}/>
                         <p className="font-medium font-sans">Who else offers a 30 Day Trial? The answer is no one else does. Not all supplements work for everyone, so allowing a trial period is a good business practice.</p>
