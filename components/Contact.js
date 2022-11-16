@@ -1,7 +1,10 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { useFormik } from "formik"
 import * as yup from "yup"
+import { toast } from "react-toastify"
+import emailjs from '@emailjs/browser';
+
 
 const contactSchema = yup.object().shape({
     name: yup.string().min(4,"Mínimo 4 caracteres.").max(30,"Máximo 30 caracteres.").required("Completa este campo."),
@@ -9,8 +12,16 @@ const contactSchema = yup.object().shape({
     message: yup.string().min(4,"Mínimo 4 caracteres.").max(600,"Máximo 600 caracteres.").required("Completa este campo."),
 })
 
-const Contact = () => {
+const Contact = ({ mailKey }) => {
 
+    const form = useRef();
+    const [ sended, setSended ] = useState(false)
+    const notifySuccess = () => toast.success("Mensaje enviado con éxito.",{
+        position: "bottom-right"
+    })
+    const notifyError = () => toast.error("Ups, intenta nuevamente.",{
+        position: "bottom-right"
+    })
     const { values, errors, touched, handleChange, handleSubmit } = useFormik({
     initialValues:{
         name:"",
@@ -18,7 +29,15 @@ const Contact = () => {
         message:""
     },
     onSubmit:(values)=>{
-       alert("mensaje enviado")
+    emailjs.sendForm('service_yyj3ayj', 'template_j6po2ps', form.current, mailKey)
+        .then((result) => {
+            notifySuccess()
+            setSended(true)
+            console.log(result.text);
+        }, (error) => {
+            notifyError()
+          console.log(error.text);
+        });
     },
     validationSchema: contactSchema
     })
@@ -29,7 +48,7 @@ const Contact = () => {
                 <div className="absolute z-10-bottom-32 -right-32 h-[20rem] w-[20rem] lg:h-[30rem] lg:w-[30rem]">
                     <Image src="/assets/mail.svg" alt="" layout="fill"/>
                 </div>
-                <form onSubmit={ handleSubmit } className="relative z-30 flex flex-col gap-y-2 w-11/12 lg:w-[50rem] mx-auto">
+                <form ref={form} onSubmit={ handleSubmit } className="relative z-30 flex flex-col gap-y-2 w-11/12 lg:w-[50rem] mx-auto">
                     <input
                         className="border rounded-md p-3 w-full outline-none" placeholder="Nombre"
                         onChange={ handleChange } 
@@ -57,7 +76,7 @@ const Contact = () => {
                         value={ values.message }
                     />
                     { touched.message && Boolean(errors.message) && <span className="ml-4 mb-1 -mt-1 text-sm text-red-600 w-full">{ errors.message }</span> }
-                    <button type="submit" className="rounded-2xl mt-2 text-white bg-secondary hover:text-secondary border border-secondary hover:bg-transparent transition-colors py-2">Enviar</button>
+                    <button type="submit" className={`${sended && "opacity-50 pointer-events-none text-slate-800"} rounded-2xl mt-2 text-white bg-secondary hover:text-secondary border border-secondary hover:bg-transparent transition-colors py-2`}>{ sended ? "Te contestamos pronto!" : "Enviar" }</button>
                 </form>
             </div>
         </>

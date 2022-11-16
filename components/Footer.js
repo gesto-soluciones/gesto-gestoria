@@ -11,7 +11,7 @@ const Footer = () => {
                     <a href="#contact" target="_blank" className="rounded-full p-3 hover:bg-main hover:text-white bg-white text-main cursor-pointer transition-colors shadow-md">
                         <RiInstagramLine size={25}/>
                     </a>
-                    <a href="#contact" className="rounded-full p-3 hover:bg-main hover:text-white bg-white text-main cursor-pointer transition-colors shadow-md">
+                    <a href="mailto:gesto.solucionesok@gmail.com" className="rounded-full p-3 hover:bg-main hover:text-white bg-white text-main cursor-pointer transition-colors shadow-md">
                         <RiMailLine size={25}/>
                     </a>
                 </div>
