@@ -69,7 +69,7 @@ export default function Home ({ mailKey }) {
             <h2 className='text-slate-800/80 font-semibold font-heading text-xl'>Qué ofrecemos:</h2>
           </div>
           <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
-            <div className={`text-slate-800/90 flex flex-col items-center gap-y-4 ${ services.anses ? "h-fit" : "h-[38rem]" } bg-slate-50 shadow-lg p-12`}>
+            <div className={`text-slate-800/90 flex flex-col items-center gap-y-4 ${ services.anses ? "h-fit" : "h-[38rem]" } bg-slate-50 shadow-lg p-6 lg:p-12`}>
               <div className=' p-3 mt-4'>
                 <IoBriefcase className='text-main' size={40}/>
               </div>
@@ -125,7 +125,7 @@ export default function Home ({ mailKey }) {
                 </a>
               </div>
             </div>
-            <div className={`text-slate-800/90 flex flex-col items-center gap-y-4 ${services.jubilacion ? "h-fit" : "h-[38rem]"} bg-slate-50 shadow-lg p-12`}>
+            <div className={`text-slate-800/90 flex flex-col items-center gap-y-4 ${services.jubilacion ? "h-fit" : "h-[38rem]"} bg-slate-50 shadow-lg p-6 lg:p-12`}>
               <div className=' p-3 mt-4'>
                 <TbOld className='text-main' size={40}/>
               </div>
@@ -197,7 +197,7 @@ export default function Home ({ mailKey }) {
                 </a>
               </div>
             </div>
-            <div className={`text-slate-800/90 flex flex-col items-center gap-y-4 ${services.inmob ? "h-fit" : "h-[38rem]"} bg-slate-50 shadow-lg p-12`}>
+            <div className={`text-slate-800/90 flex flex-col items-center gap-y-4 ${services.inmob ? "h-fit" : "h-[38rem]"} bg-slate-50 shadow-lg p-6 lg:p-12`}>
               <div className=' p-3 mt-4'>
                 <IoHome className='text-main' size={40}/>
               </div>
@@ -254,7 +254,7 @@ export default function Home ({ mailKey }) {
             <div className='h-[20rem] w-full relative p-10'>
               <Image src="/assets/computer.svg" alt="" layout='fill'/>
             </div>
-            <div className='p-14 flex flex-col items-center justify-center'>
+            <div className=' p-8 md:p-14 flex flex-col items-center justify-center'>
               <h2 className='w-full mb-4 text-2xl font-heading text-slate-800/90 font-semibold'>Comodidad y Seguridad</h2>
               <p className='font-sans'>Garantizamos de manera transparente todas nuestras gestiones y nos adecuamos a su comodidad brindando nuestros servicios a través de internet.</p>
               <ul className='w-full flex flex-col gap-2 font-sans mt-4'>
@@ -265,7 +265,7 @@ export default function Home ({ mailKey }) {
           </div>
         </section>
         <section className='my-8 lg:my-16 grid grid-cols-1 lg:grid-cols-2 w-11/12 lg:w-[60rem] xl:w-[75rem] mx-auto text-slate-800/80'>
-          <div className='p-14 flex flex-col items-center justify-center'>
+          <div className='p-8 md:p-14 flex flex-col items-center justify-center'>
             <h2 className='w-full mb-4 text-2xl font-heading text-slate-800/90 font-semibold'>Versatilidad, Eficiencia y Rapidez</h2>
             <p className='font-sans'>Ofreciendo soluciones específicas a las necesidades de cada cliente, con un trato directo, profesional y personalizado.</p>
             <ul className='w-full flex flex-col gap-2 font-sans mt-4'>
