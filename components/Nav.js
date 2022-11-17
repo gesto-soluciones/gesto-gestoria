@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { RiVipDiamondLine, RiFacebookFill, RiInstagramLine } from "react-icons/ri"
+import { RiVipDiamondLine, RiFacebookFill, RiInstagramLine, RiMailLine } from "react-icons/ri"
 import { FiMenu } from "react-icons/fi"
 import { IoClose } from "react-icons/io5"
 import Link from "next/link"
