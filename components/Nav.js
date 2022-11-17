@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { RiVipDiamondLine, RiFacebookFill, RiInstagramLine, RiMailLine } from "react-icons/ri"
+import { RiVipDiamondLine, RiInstagramLine, RiMailLine } from "react-icons/ri"
 import { FiMenu } from "react-icons/fi"
 import { IoClose } from "react-icons/io5"
 import Link from "next/link"
@@ -86,9 +86,7 @@ const Nav = () => {
                             Contacto
                         </a>
                         <div className="flex mt-2 gap-x-4">
-                            <a href="mailto:gesto.solucionesok@gmail.com" className="rounded-full p-3 hover:bg-main hover:text-white bg-white text-main cursor-pointer transition-colors shadow-md">
-                                <RiMailLine size={20}/>
-                            </a>
+                            <a href="mailto:gesto.solucionesok@gmail.com" className="rounded-full p-1 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer -ml-2"><RiMailLine size={15}/></a>
                             <a href="https://www.instagram.com/gestosoluciones/" target="_blank" rel="noreferrer" className="rounded-full p-2 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer"><RiInstagramLine size={20}/></a>                               
                         </div>
                     </div>
@@ -122,9 +120,7 @@ const Nav = () => {
                     >
                         Contacto
                     </a>
-                    <a href="mailto:gesto.solucionesok@gmail.com" className="rounded-full p-3 hover:bg-main hover:text-white bg-white text-main cursor-pointer transition-colors shadow-md">
-                        <RiMailLine size={15}/>
-                    </a>
+                    <a href="mailto:gesto.solucionesok@gmail.com" className="rounded-full p-1 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer"><RiMailLine size={15}/></a>
                     <a href="https://www.instagram.com/gestosoluciones/" target="_blank" rel="noreferrer" className="rounded-full p-1 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer -ml-2"><RiInstagramLine size={15}/></a>
                 </div>
             </div>
