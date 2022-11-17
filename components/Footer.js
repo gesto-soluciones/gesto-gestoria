@@ -8,7 +8,7 @@ const Footer = () => {
                     <a href="#contact" target="_blank" className="rounded-full p-3 hover:bg-main hover:text-white bg-white text-main cursor-pointer transition-colors shadow-md">
                         <RiFacebookFill size={25}/>
                     </a>
-                    <a href="#contact" target="_blank" className="rounded-full p-3 hover:bg-main hover:text-white bg-white text-main cursor-pointer transition-colors shadow-md">
+                    <a href="https://www.instagram.com/gestosoluciones/" target="_blank" className="rounded-full p-3 hover:bg-main hover:text-white bg-white text-main cursor-pointer transition-colors shadow-md">
                         <RiInstagramLine size={25}/>
                     </a>
                     <a href="mailto:gesto.solucionesok@gmail.com" className="rounded-full p-3 hover:bg-main hover:text-white bg-white text-main cursor-pointer transition-colors shadow-md">

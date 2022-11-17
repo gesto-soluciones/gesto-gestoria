@@ -87,7 +87,7 @@ const Nav = () => {
                         </a>
                         <div className="flex mt-2 gap-x-4">
                             <a className="rounded-full p-2 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer"><RiFacebookFill size={20}/></a>
-                            <a className="rounded-full p-2 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer"><RiInstagramLine size={20}/></a>                               
+                            <a href="https://www.instagram.com/gestosoluciones/" target="_blank" className="rounded-full p-2 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer"><RiInstagramLine size={20}/></a>                               
                         </div>
                     </div>
                 </motion.div>
@@ -121,7 +121,7 @@ const Nav = () => {
                             Contacto
                         </a>
                     <a className="rounded-full p-1 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer"><RiFacebookFill size={15}/></a>
-                    <a className="rounded-full p-1 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer -ml-2"><RiInstagramLine size={15}/></a>
+                    <a href="https://www.instagram.com/gestosoluciones/" target="_blank" className="rounded-full p-1 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer -ml-2"><RiInstagramLine size={15}/></a>
                 </div>
             </div>
         </>
