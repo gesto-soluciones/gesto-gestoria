@@ -86,7 +86,7 @@ const Nav = () => {
                             Contacto
                         </a>
                         <div className="flex mt-2 gap-x-4">
-                            <a href="mailto:gesto.solucionesok@gmail.com" className="rounded-full p-1 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer -ml-2"><RiMailLine size={15}/></a>
+                            <a href="mailto:gesto.solucionesok@gmail.com" className="rounded-full p-2 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer -ml-2"><RiMailLine size={20}/></a>
                             <a href="https://www.instagram.com/gestosoluciones/" target="_blank" rel="noreferrer" className="rounded-full p-2 bg-secondary hover:bg-white hover:text-secondary transition-colors cursor-pointer"><RiInstagramLine size={20}/></a>                               
                         </div>
                     </div>
