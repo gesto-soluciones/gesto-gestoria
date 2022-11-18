@@ -68,8 +68,8 @@ export default function Home ({ mailKey }) {
             <h3 className='text-secondary font-semibold font-heading'>SERVICIOS</h3>
             <h2 className='text-slate-800/80 font-semibold font-heading text-xl'>Qué ofrecemos:</h2>
           </div>
-          <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
-            <div className={`text-slate-800/90 flex flex-col items-center gap-y-4 ${ services.anses ? "h-fit" : "h-[38rem]" } bg-slate-50 shadow-lg p-6 lg:p-12`}>
+          <div className='grid grid-cols-1 lg:grid-cols-3 gap-4 items-center'>
+            <div className={`text-slate-800/90 flex flex-col items-center gap-y-4 ${ services.anses ? "h-fit" : "h-[38rem]" } bg-slate-50 rounded-md shadow-lg p-6 lg:p-12`}>
               <div className=' p-3 mt-4'>
                 <IoBriefcase className='text-main' size={40}/>
               </div>
@@ -125,67 +125,67 @@ export default function Home ({ mailKey }) {
                 </a>
               </div>
             </div>
-            <div className={`text-slate-800/90 flex flex-col items-center gap-y-4 ${services.jubilacion ? "h-fit" : "h-[38rem]"} bg-slate-50 shadow-lg p-6 lg:p-12`}>
+            <div className={`text-white rounded-md flex flex-col items-center gap-y-4 ${services.jubilacion ? "h-fit" : "h-[45rem]"} bg-main shadow-lg p-6 lg:p-12`}>
               <div className=' p-3 mt-4'>
-                <TbOld className='text-main' size={40}/>
+                <TbOld className='text-secondary' size={40}/>
               </div>
               <h3 className='font-heading text-lg font-semibold'>Jubilaciones y Pensiones</h3>
               <div>
                 <p className='font-sans'>
-                  Las personas mayores y los más vulnerables son nuestra <span className='font-semibold'>prioridad</span>, por eso, les facilitamos los trámites para mejorar su calidad de vida: 
+                  Las personas mayores y los más vulnerables son nuestra <span className='font-semibold'>prioridad</span>, por eso, nos <span className='font-semibold'>especializamos</span> en <span className='font-semibold'>pensiones por discapacidad</span>. 
                 </p>
               </div>
               <ul className='w-full font-sans list-disc ml-8'>
-                <li className='text-main'>
-                  <div className='text-slate-800/80'>Iniciar una jubilación/jubilación anticipada</div>
+                <li className='text-secondary'>
+                  <div className='text-white font-semibold'>Pensión por discapacidad</div>
                 </li>
-                <li className='text-main'>
-                  <div className='text-slate-800/80'>Pensión por discapacidad</div>
+                <li className='text-secondary'>
+                  <div className='text-white'>Retiro transitorio por invalidez</div>
                 </li>
-                <li className='text-main'>
-                  <div className='text-slate-800/80'>Retiro transitorio por invalidez</div>
+                <li className='text-secondary'>
+                  <div className='text-white'>Salario por hijos con discapacidad </div>
                 </li>
-                <li className='text-main'>
-                  <div className='text-slate-800/80'>Salario por hijos con discapacidad </div>
+                <li className='text-secondary'>
+                  <div className='text-white'>Iniciar una jubilación/jubilación anticipada</div>
+                </li>
+                <li className='text-secondary'>
+                  <div className='text-white'>Consultar recibo de haberes</div>
+                </li>
+                <li className='text-secondary'>
+                  <div className='text-white'>Iniciar Pensión Universal para el Adulto Mayor</div>
                 </li>
                 {
                   services.jubilacion ? 
                   <>
-                    <li className='text-main'>
-                      <div className='text-slate-800/80'>Consultar recibo de haberes</div>
+                    <li className='text-secondary'>
+                      <div className='text-white'>Reclamar un beneficio no cobrado</div>
                     </li>
-                    <li className='text-main'>
-                      <div className='text-slate-800/80'>Iniciar Pensión Universal para el Adulto Mayor</div>
+                    <li className='text-secondary'>
+                      <div className='text-white'>Iniciar una pensión por fallecimiento un jubilado/a</div>
                     </li>
-                    <li className='text-main'>
-                      <div className='text-slate-800/80'>Reclamar un beneficio no cobrado</div>
+                    <li className='text-secondary'>
+                      <div className='text-white'>Iniciar una pensión por fallecimiento de un trabajador/a</div>
                     </li>
-                    <li className='text-main'>
-                      <div className='text-slate-800/80'>Iniciar una pensión por fallecimiento un jubilado/a</div>
+                    <li className='text-secondary'>
+                      <div className='text-white'>Consulta de sentencia judicial por reajuste de haberes</div>
                     </li>
-                    <li className='text-main'>
-                      <div className='text-slate-800/80'>Iniciar una pensión por fallecimiento de un trabajador/a</div>
+                    <li className='text-secondary'>
+                      <div className='text-white'>Consultar si tenés tu huella registrada</div>
                     </li>
-                    <li className='text-main'>
-                      <div className='text-slate-800/80'>Consulta de sentencia judicial por reajuste de haberes</div>
+                    <li className='text-secondary'>
+                      <div className='text-white'>Tramitar un poder</div>
                     </li>
-                    <li className='text-main'>
-                      <div className='text-slate-800/80'>Consultar si tenés tu huella registrada</div>
+                    <li className='text-secondary'>
+                      <div className='text-white'>Reclamar reajuste de haberes</div>
                     </li>
-                    <li className='text-main'>
-                      <div className='text-slate-800/80'>Tramitar un poder</div>
+                    <li className='text-secondary'>
+                      <div className='text-white'>Rehabilitar el cobro de un beneficio previsional</div>
                     </li>
-                    <li className='text-main'>
-                      <div className='text-slate-800/80'>Reclamar reajuste de haberes</div>
+                    <li className='text-secondary'>
+                      <div className='text-white'>Consulta de descuentos de mutuales y otras entidades</div>
                     </li>
-                    <li className='text-main'>
-                      <div className='text-slate-800/80'>Rehabilitar el cobro de un beneficio previsional</div>
-                    </li>
-                    <li className='text-main'>
-                      <div className='text-slate-800/80'>Consulta de descuentos de mutuales y otras entidades</div>
-                    </li>
-                    <li className='text-main'>
-                      <div className='text-slate-800/80'>Segmentación energética</div>
+                    <li className='text-secondary'>
+                      <div className='text-white'>Segmentación energética</div>
                     </li>
                   </> : null
                 }
@@ -197,7 +197,7 @@ export default function Home ({ mailKey }) {
                 </a>
               </div>
             </div>
-            <div className={`text-slate-800/90 flex flex-col items-center gap-y-4 ${services.inmob ? "h-fit" : "h-[38rem]"} bg-slate-50 shadow-lg p-6 lg:p-12`}>
+            <div className={`text-slate-800/90 flex flex-col items-center gap-y-4 ${services.inmob ? "h-fit" : "h-[38rem]"} bg-slate-50 rounded-md shadow-lg p-6 lg:p-12`}>
               <div className=' p-3 mt-4'>
                 <IoHome className='text-main' size={40}/>
               </div>
@@ -295,6 +295,11 @@ export default function Home ({ mailKey }) {
                     drag="x"
                 >
                     <motion.div className="flex flex-col gap-y-3 rounded-md shadow-lg p-8 h-full w-[20rem] min-w-[20rem] md:w-[25rem] md:min-w-[25rem] lg:w-[35rem] lg:min-w-[35rem] text-slate-800/90"> 
+                        <h2 className="font-heading font-semibold text-2xl ">David H.</h2>
+                        <Stars filled={5}/>
+                        <p className="font-medium font-sans">Para mi significa mucha felicidad y agradecimiento. Estuve desde el 2019 esperando esta pensión. Tengo un problema en la columna, una escoliosis avanzada que afectan también a mis piernas y pies.</p>
+                    </motion.div>
+                    <motion.div className="flex flex-col gap-y-3 rounded-md shadow-lg p-8 h-full w-[20rem] min-w-[20rem] md:w-[25rem] md:min-w-[25rem] lg:w-[35rem] lg:min-w-[35rem] text-slate-800/90"> 
                         <h2 className="font-heading font-semibold text-2xl ">Susana J.</h2>
                         <Stars filled={5}/>
                         <p className="font-medium font-sans">Se que esta fue una tramitación más para Uds, pero para mi fue muy importante, nunca pense que me saldria. Estoy muy contenta y agradecida, por su dedicación y la amabilidad con que fui atendida. Es por esto que le dejo este pequeño presente como muestra de mi agradecimiento.</p>
@@ -303,11 +308,6 @@ export default function Home ({ mailKey }) {
                         <h2 className="font-heading font-semibold text-2xl ">Oscar M.</h2>
                         <Stars filled={4}/>
                         <p className="font-medium font-sans">Habiendo recibido mi primer aporte jubilatorio, quiero agradecerles, su rápida y eficiente gestión.</p>
-                    </motion.div>
-                    <motion.div className="flex flex-col gap-y-3 rounded-md shadow-lg p-8 h-full w-[20rem] min-w-[20rem] md:w-[25rem] md:min-w-[25rem] lg:w-[35rem] lg:min-w-[35rem] text-slate-800/90"> 
-                        <h2 className="font-heading font-semibold text-2xl ">David H.</h2>
-                        <Stars filled={5}/>
-                        <p className="font-medium font-sans">Para mi significa mucha felicidad y agradecimiento. Estuve desde el 2019 esperando esta pensión. Tengo un problema en la columna, una escoliosis avanzada que afectan también a mis piernas y pies.</p>
                     </motion.div>
                     <motion.div className="flex flex-col gap-y-3 rounded-md shadow-lg p-8 h-full w-[20rem] min-w-[20rem] md:w-[25rem] md:min-w-[25rem] lg:w-[35rem] lg:min-w-[35rem] text-slate-800/90"> 
                         <h2 className="font-heading font-semibold text-2xl ">Alicia C.</h2>
