@@ -31,7 +31,7 @@ export default function Home ({ mailKey }) {
       </div>
     </>
   )
-
+}
 /*
   return (
     <div>
