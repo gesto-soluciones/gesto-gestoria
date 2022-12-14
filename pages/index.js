@@ -25,6 +25,15 @@ export default function Home ({ mailKey }) {
   },[])
 
   return (
+    <>
+      <div className='w-full h-screen flex items-center justify-center'>
+        <h1>Sitio en mantenimiento</h1>
+      </div>
+    </>
+  )
+
+/*
+  return (
     <div>
       <Head>
         <title>Gesto - Soluciones</title>
@@ -336,6 +345,7 @@ export default function Home ({ mailKey }) {
     </div>
   )
 }
+*/
 
 export const getServerSideProps = () => {
   const MAIL_KEY = process.env.MAIL_KEY
