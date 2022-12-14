@@ -18,16 +18,16 @@ export default function Home ({ mailKey }) {
     inmob:false
   })
   const [ width, setWidth ] = useState(0)
-  const carousel = useRef()
+ // const carousel = useRef()
 
   useEffect(()=>{
-      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
+      //setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
   },[])
 
   return (
     <>
-      <div className='w-full h-screen flex items-center justify-center'>
-        <h1>Sitio en mantenimiento</h1>
+      <div className='w-full h-screen flex items-center justify-center bg-slate-800'>
+        <h1 className='text-xl font-semibold text-white'>Sitio en mantenimiento</h1>
       </div>
     </>
   )
