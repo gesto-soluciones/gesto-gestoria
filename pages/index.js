@@ -18,21 +18,12 @@ export default function Home ({ mailKey }) {
     inmob:false
   })
   const [ width, setWidth ] = useState(0)
- // const carousel = useRef()
+ const carousel = useRef()
 
   useEffect(()=>{
-      //setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
+      setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
   },[])
 
-  return (
-    <>
-      <div className='w-full h-screen flex items-center justify-center bg-slate-800'>
-        <h1 className='text-xl font-semibold text-white'>Sitio en mantenimiento</h1>
-      </div>
-    </>
-  )
-}
-/*
   return (
     <div>
       <Head>
@@ -345,7 +336,6 @@ export default function Home ({ mailKey }) {
     </div>
   )
 }
-*/
 
 export const getServerSideProps = () => {
   const MAIL_KEY = process.env.MAIL_KEY
